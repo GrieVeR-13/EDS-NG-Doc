@@ -1,0 +1,32 @@
+site_name: EDS NG
+
+theme:
+  name: material
+  language: en
+  logo: icon.svg
+  palette:
+    - scheme: default
+      primary: custom
+      accent: custom
+
+    - scheme: slate
+      primary: custom
+      accent: custom
+
+plugins:
+  - search:
+      enabled: false
+  - roamlinks:  # Плагин для обработки [[другой файл]]
+
+extra_css:
+  - stylesheets/extra.css
+  
+use_directory_urls: false
+
+extra:
+  copyright: ""
+  generator: false
+
+markdown_extensions:
+  - toc:
+      permalink: true

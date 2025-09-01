@@ -1,0 +1,39 @@
+obsidian_entrypoint_path_str: "G:/AndroidDev/eds_ng_doc/EDS-NG-Doc2/index.md"
+html_output_folder_path_str: "G:/AndroidDev/eds_ng_doc/EDS-NG-Doc-html2"
+toggles:
+  process_all: true           # конвертировать все заметки
+  relative_path_html: false   # ссылки не относительные (удобно для хостинга)
+
+  features:
+    styling:
+      layout: documentation
+      header_template: full
+      max_note_width: 120rem
+      add_dir_list: true
+
+    search:
+      enabled: true
+    backlinks:
+      enabled: true
+    graph:
+      enabled: true
+    tags_page:
+      enabled: true
+
+    create_index_from_dir_structure:
+      enabled: true
+      rel_output_path: "index.html"   # <- сгенерируем index.html в корне выхода
+      exclude_subfolders:
+        - ".git"
+        - "obs.html"
+      exclude_files:
+        - "not_created.html"
+      homepage_label: "index"
+
+    side_pane:
+      left_pane:
+        enabled: true
+        contents: dir_tree
+      right_pane:
+        enabled: true
+        contents: toc

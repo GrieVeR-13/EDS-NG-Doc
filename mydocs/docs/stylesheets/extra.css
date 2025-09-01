@@ -1,0 +1,129 @@
+@font-face {
+    font-family: "Gotham Pro";
+    src: url("../gotham_pro.woff2") format("woff2");
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+  --md-primary-fg-color: #A3B3FE;
+  --md-accent-fg-color: #969EF3
+}
+
+.mkdocs-header, .md-header {
+    position: fixed !important;
+    top: 0 !important;
+    width: 100% !important;
+    max-width: 100vw; /* Ограничиваем ширину viewport */
+    overflow: hidden;
+}
+
+/* Скрываем весь footer */
+.md-footer {
+    display: none !important;
+}
+
+/* Изменение цвета всех ссылок */
+a, a:link, a:visited {
+    color: #626CBB;
+    text-decoration: none;
+}
+
+/* Цвет ссылок при наведении */
+a:hover, a:active {
+    color: #626CBB;
+    text-decoration: underline;
+}
+
+/* Для ссылок в боковой панели навигации (если используются специфические классы темы) */
+.md-nav__link {
+    color: #626CBB !important; /* Цвет ссылок в навигации */
+}
+
+/* Ссылки в активном состоянии (например, текущая страница в навигации) */
+.md-nav__link--active {
+    color: #353F65 !important; /* Цвет активной ссылки */
+}
+
+/* Для ссылок в содержимом страницы */
+.md-content a {
+    color: #626CBB !important; /* Цвет ссылок в основном содержимом */
+}
+
+/* Стилизация скроллбара для боковой панели навигации */
+.md-nav--primary::-webkit-scrollbar {
+    width: 8px; /* Ширина скроллбара */
+}
+
+.md-nav--primary::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет фона дорожки скроллбара */
+    border-radius: 4px;
+}
+
+.md-nav--primary::-webkit-scrollbar-thumb {
+    background: #969EF3; /* Цвет ползунка (например, синий) */
+    border-radius: 4px;
+}
+
+.md-nav--primary::-webkit-scrollbar-thumb:hover {
+    background: #969EF3; /* Цвет ползунка при наведении */
+}
+
+/* Стилизация скроллбара для основного контента */
+.md-content::-webkit-scrollbar {
+    width: 8px; /* Ширина скроллбара */
+}
+
+.md-content::-webkit-scrollbar-track {
+    background: #f1f1f1; /* Цвет фона дорожки */
+    border-radius: 4px;
+}
+
+.md-content::-webkit-scrollbar-thumb {
+    background: #969EF3; /* Цвет ползунка */
+    border-radius: 4px;
+}
+
+.md-content::-webkit-scrollbar-thumb:hover {
+    background: #969EF3; /* Цвет ползунка при наведении */
+}
+
+/* Применяем шрифт ко всем элементам */
+body, h1, h2, h3, h4, h5, h6, p, a, .md-nav__link, .md-content {
+    font-family: "Gotham Pro", sans-serif !important;
+}
+
+/* Для боковой панели навигации */
+.md-nav, .md-nav__link {
+    font-family: "Gotham Pro", sans-serif !important;
+}
+
+/* Для основного контента */
+.md-content, .md-content p, .md-content h1, .md-content h2 {
+    font-family: "Gotham Pro", sans-serif !important;
+}
+
+/* Увеличиваем отступ сверху для основного контента */
+.md-main__inner {
+    padding-top: 20px !important;
+}
+
+/* Учитываем высоту фиксированной шапки */
+.md-main {
+    margin-top: 20px !important;
+}
+
+/* Для контента */
+.md-content {
+    padding-top: 20px !important;
+}
+
+/* Адаптивность для маленьких экранов */
+@media (max-width: 600px) {
+    .md-main__inner {
+        padding-top: 10px !important;
+    }
+    .md-main {
+        margin-top: 20px !important;
+    }
+}
